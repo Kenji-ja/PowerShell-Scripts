@@ -5,10 +5,10 @@ Import-Module ActiveDirectory
 $Header = "Fname" , "Lname"
 
 #Default password for accounts
-$Password = "P@ssword"
+$Password = Read-Host -Prompt "Enter the default password for all accounts (will be changed upon login): "
 
 #set path for the ddirectory
-$path = "changeme"
+$path = Read-Host -Prompt "Enter the distinguished name of the directory: "
 
 #Import CSV with custom header, then format information and apss it to New-AD user
 Import-Csv -Path $UsersFilePath -Header $Header | ForEach {
