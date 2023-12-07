@@ -1,4 +1,4 @@
-﻿#Import AD moddule
+﻿#Import AD module
 Import-Module ActiveDirectory
 
 #Create AD user
