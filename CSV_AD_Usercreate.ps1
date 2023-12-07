@@ -19,7 +19,7 @@ $Lname = $_.Lname
 
 #Create AD user
 New-ADUser `
-   -Name $Fame `
+   -Name $Fname `
    -GivenName $givenName `
    -Surname $Lname `
    -UserPrincipalName "$Fname $Lname" `
@@ -27,4 +27,7 @@ New-ADUser `
    -Path "$path" `
    -ChangePasswordAtLogon $true `
    -Enabled $true
+
+#FeedBack
+Write-Host "created" $givenName
 }
