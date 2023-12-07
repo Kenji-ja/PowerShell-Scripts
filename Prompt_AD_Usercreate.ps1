@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory
 
 #Default password for accounts
-$Password = Read-Host -Prompt "Enter teh default password for all accounts (will be changed upon login): "
+$Password = Read-Host -Prompt "Enter the default password for all accounts (will be changed upon login): "
 
 #set path for the ddirectory
 $path = Read-Host -Prompt "Enter the distinguished name of the directory: "
